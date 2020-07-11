@@ -1,0 +1,8 @@
+- name: Install Docker Container
+  docker_container:
+    name: "{{ image_name }}"
+    image: "{{ image }}"
+    state: started
+    restart: yes
+    exposed_ports:
+      - "80"

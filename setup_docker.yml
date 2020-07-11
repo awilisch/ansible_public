@@ -1,0 +1,12 @@
+- name: "Setup Docker Container"
+  hosts: docker
+  vars_prompt:
+    - name: image_name
+      prompt: "Enter Name for Container: "
+      private: no
+    - name: image
+      prompt: "Enter Docker Image: "
+      private: no
+
+  roles:
+    - generic_container
