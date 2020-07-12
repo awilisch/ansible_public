@@ -1,0 +1,29 @@
+[digital_ocean]
+
+[digital_ocean:vars]
+ntp_server=clock.redhat.com
+syslog_server_ip=
+syslog_client=true
+syslog_server=false
+ro_community=S3cur3M3!
+root_password_hash="<create password hash>"
+ansible_password_hash="<create password hash>"
+admin_user=ansible
+ansible_python_interpreter=/usr/bin/python3
+
+[digital_ocean:children]
+cent7
+debian
+docker
+linux_servers
+kubernetes
+
+[linux_servers]
+
+[kubernetes]
+
+[cent7]
+
+[debian]
+
+[docker]

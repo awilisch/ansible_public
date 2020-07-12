@@ -1,0 +1,12 @@
+- name: "Deploy Docker Container"
+  hosts: docker
+  vars_prompt:
+    - name: image_name
+      prompt: "Enter Container Name: "
+      private: no
+    - name: image
+      prompt: "Enter Docker Image: "
+      private: no
+
+  roles:
+    - deploy_container
