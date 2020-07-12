@@ -4,5 +4,5 @@
     image: "{{ image }}"
     state: started
     restart: yes
-    exposed_ports:
-      - "80"
+    ports:
+      - "80:2368"
