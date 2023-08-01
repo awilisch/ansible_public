@@ -21,12 +21,12 @@ judgement.
 
 An example of the format to deploy would be: 
 
-ansible-playbook -i inventory/collective_local deploy_container.yml
+ansible-playbook -i inventory/digital_ocean deploy_container.yml
 
 If you want to just deploy to a single server in your inventory file you can 
 limit your playbook like this: 
 
-ansible-playbook -i inventory/collective_local --limit <ip address or name in inventory file> deploy_container.yml
+ansible-playbook -i inventory/digital_ocean --limit <ip address or name in inventory file> deploy_container.yml
 
 Docker Container - 
 
